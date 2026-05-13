@@ -1,0 +1,53 @@
+/* styles.css */
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* 霓虹文字效果 */
+.neon-text {
+  text-shadow: 0 0 10px #22d3ee,
+               0 0 20px #22d3ee,
+               0 0 40px #22d3ee;
+}
+
+/* 卡片霓虹懸停效果 */
+.neon-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neon-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.5);
+}
+
+/* 進度條 */
+.progress-bar {
+  transition: width 1.8s ease-in-out;
+}
+
+/* Hero 背景漸層 */
+#home {
+  background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.9)), 
+              url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+}
+
+/* 其他微調 */
+section {
+  scroll-margin-top: 80px;
+}
+
+input, textarea {
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #22d3ee;
+  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.2);
+}
+
+/* 手機版漢堡選單（可後續擴充） */
+@media (max-width: 768px) {
+  .hidden.md\:flex {
+    display: none;
+  }
+}

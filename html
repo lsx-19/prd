@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>林仕軒 | Interactive Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-950 text-slate-200 overflow-x-hidden">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-slate-950/90 backdrop-blur-md z-50 border-b border-cyan-900">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+      <h1 class="text-3xl font-bold neon-text text-cyan-400">林仕軒</h1>
+      <div class="hidden md:flex gap-8 text-lg">
+        <a href="#home" class="hover:text-cyan-400 transition">首頁</a>
+        <a href="#about" class="hover:text-cyan-400 transition">關於我</a>
+        <a href="#skills" class="hover:text-cyan-400 transition">技能</a>
+        <a href="#portfolio" class="hover:text-cyan-400 transition">作品</a>
+        <a href="#contact" class="hover:text-cyan-400 transition">聯絡</a>
+      </div>
+      <a href="https://github.com/yourusername" target="_blank" 
+         class="px-6 py-2.5 bg-transparent border border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-slate-950 transition font-medium">
+        <i class="fa-brands fa-github mr-2"></i>GitHub
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="min-h-screen flex items-center relative">
+    <div class="max-w-6xl mx-auto px-6 pt-20 text-center" data-aos="fade-up">
+      <h2 class="text-6xl md:text-7xl font-bold mb-6 neon-text">嗨，我是林仕軒</h2>
+      <p class="text-3xl md:text-4xl text-cyan-300 mb-6">前端開發學習者 • Vibe Coding 實踐者</p>
+      <p class="max-w-2xl mx-auto text-lg text-slate-400 mb-12">
+        熱愛將想法轉化為互動式網頁，持續探索現代前端技術
+      </p>
+      <a href="#portfolio" class="inline-block px-10 py-5 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xl rounded-2xl transition hover:scale-105">
+        查看我的作品 →
+      </a>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="py-24 bg-slate-900">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-16 neon-text" data-aos="fade-up">About Me</h2>
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div data-aos="fade-right">
+          <img src="https://picsum.photos/id/64/600/700" alt="林仕軒" class="rounded-3xl shadow-2xl w-full object-cover">
+        </div>
+        <div data-aos="fade-left" class="space-y-8 text-lg">
+          <p class="leading-relaxed text-slate-300">
+            我是林仕軒，目前就讀於台北。從傳統手刻 HTML/CSS/JS 開始學習網頁開發，最近正在練習「Vibe Coding」——與 AI 協作開發網站。
+          </p>
+          <p class="leading-relaxed text-slate-300">
+            我相信好的網站不只是功能完整，更應該帶來美好的使用體驗與視覺享受。
+          </p>
+          
+          <div class="pt-6">
+            <h3 class="text-2xl font-semibold mb-6 text-cyan-400">興趣</h3>
+            <div class="flex flex-wrap gap-4">
+              <span class="px-6 py-3 bg-slate-800 rounded-2xl">網頁設計</span>
+              <span class="px-6 py-3 bg-slate-800 rounded-2xl">攝影</span>
+              <span class="px-6 py-3 bg-slate-800 rounded-2xl">吉他</span>
+              <span class="px-6 py-3 bg-slate-800 rounded-2xl">閱讀</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-16 neon-text" data-aos="fade-up">Skills</h2>
+      <div class="grid md:grid-cols-2 gap-16">
+        <div data-aos="fade-up">
+          <h3 class="text-3xl mb-10 text-cyan-400 font-semibold">Frontend</h3>
+          <div class="space-y-10">
+            <div>
+              <div class="flex justify-between mb-3"><span class="font-medium">HTML5 &amp; CSS3</span><span>95%</span></div>
+              <div class="h-3 bg-slate-800 rounded-full"><div class="progress-bar h-3 w-[95%] bg-cyan-400 rounded-full"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-3"><span class="font-medium">JavaScript (ES6+)</span><span>85%</span></div>
+              <div class="h-3 bg-slate-800 rounded-full"><div class="progress-bar h-3 w-[85%] bg-cyan-400 rounded-full"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-3"><span class="font-medium">Tailwind CSS</span><span>90%</span></div>
+              <div class="h-3 bg-slate-800 rounded-full"><div class="progress-bar h-3 w-[90%] bg-cyan-400 rounded-full"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-3xl mb-10 text-purple-400 font-semibold">Tools &amp; Others</h3>
+          <div class="space-y-10">
+            <div>
+              <div class="flex justify-between mb-3"><span class="font-medium">Git &amp; GitHub</span><span>80%</span></div>
+              <div class="h-3 bg-slate-800 rounded-full"><div class="progress-bar h-3 w-[80%] bg-purple-400 rounded-full"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-3"><span class="font-medium">AI 協作開發 (Vibe Coding)</span><span>78%</span></div>
+              <div class="h-3 bg-slate-800 rounded-full"><div class="progress-bar h-3 w-[78%] bg-purple-400 rounded-full"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-3"><span class="font-medium">RWD 響應式設計</span><span>88%</span></div>
+              <div class="h-3 bg-slate-800 rounded-full"><div class="progress-bar h-3 w-[88%] bg-purple-400 rounded-full"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-24 bg-slate-900">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-16 neon-text" data-aos="fade-up">Portfolio</h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 作品1 -->
+        <div class="neon-card bg-slate-800 rounded-3xl overflow-hidden" data-aos="fade-up">
+          <img src="https://picsum.photos/id/201/600/400" class="w-full h-56 object-cover">
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-3">個人履歷形象網站</h3>
+            <p class="text-slate-400 mb-6">使用純 HTML + CSS + JavaScript 手刻完成，已成功部署至 GitHub Pages。</p>
+            <div class="flex flex-wrap gap-2 mb-8">
+              <span class="text-xs bg-slate-700 px-4 py-2 rounded-full">HTML</span>
+              <span class="text-xs bg-slate-700 px-4 py-2 rounded-full">CSS</span>
+              <span class="text-xs bg-slate-700 px-4 py-2 rounded-full">JavaScript</span>
+            </div>
+            <a href="#" class="text-cyan-400 hover:text-white transition">Live Demo →</a>
+          </div>
+        </div>
+
+        <!-- 作品2 -->
+        <div class="neon-card bg-slate-800 rounded-3xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://picsum.photos/id/237/600/400" class="w-full h-56 object-cover">
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-3">咖啡廳形象網站</h3>
+            <p class="text-slate-400 mb-6">Vibe Coding 第一次實作，使用 AI 協作生成後親手優化。</p>
+            <div class="flex flex-wrap gap-2 mb-8">
+              <span class="text-xs bg-slate-700 px-4 py-2 rounded-full">Tailwind</span>
+              <span class="text-xs bg-slate-700 px-4 py-2 rounded-full">AI 協作</span>
+            </div>
+            <a href="#" class="text-cyan-400 hover:text-white transition">Live Demo →</a>
+          </div>
+        </div>
+
+        <!-- 作品3 -->
+        <div class="neon-card bg-slate-800 rounded-3xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://picsum.photos/id/180/600/400" class="w-full h-56 object-cover">
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-3">吉他社招生網站</h3>
+            <p class="text-slate-400 mb-6">互動式社團招生平台，包含活動相簿與報名表單。</p>
+            <div class="flex flex-wrap gap-2 mb-8">
+              <span class="text-xs bg-slate-700 px-4 py-2 rounded-full">JavaScript</span>
+              <span class="text-xs bg-slate-700 px-4 py-2 rounded-full">RWD</span>
+            </div>
+            <a href="#" class="text-cyan-400 hover:text-white transition">Live Demo →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-12 neon-text" data-aos="fade-up">Get In Touch</h2>
+      <form id="contactForm" class="space-y-8">
+        <div class="grid md:grid-cols-2 gap-6">
+          <input type="text" placeholder="您的姓名" required class="bg-slate-900 border border-slate-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-cyan-400">
+          <input type="email" placeholder="Email 信箱" required class="bg-slate-900 border border-slate-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-cyan-400">
+        </div>
+        <textarea placeholder="訊息內容..." rows="6" required class="w-full bg-slate-900 border border-slate-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-cyan-400"></textarea>
+        <button type="submit" class="w-full py-6 bg-gradient-to-r from-cyan-400 to-purple-500 text-slate-950 font-bold text-xl rounded-2xl hover:scale-105 transition">
+          送出訊息
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-black py-12 text-center text-slate-500">
+    <p>© 2026 林仕軒 • Made with ❤️ using Vibe Coding</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 1000 });
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('✅ 訊息已成功送出！感謝您的聯絡。');
+    });
+
+    // 平滑滾動
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
